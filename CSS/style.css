@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif, sans-serif;
+}
+html {
+    font-size: 16px;
+}
+
+
+img {
+    max-width: 100%;
+}
+header{
+    background-color: #1B7434;
+    padding: 30px;
+    height: 100px;
+    width: 100%;
+    display:flex;
+    align-items: center ;
+    justify-content: space-between;
+    margin-bottom: 0;
+}   
+.menu-item {
+    display:inline;
+}
+.menu-item a {
+    text-decoration: none;
+    color: #F5F5F5;
+}
+.menu-item a:hover {
+    text-decoration: underline;
+    background-color: lightgray;
+}
+h1,
+h2,
+{
+    color: #1B7434;
+}
+.btn {
+    text-decoration: none;
+    color:#1B7434;
+    background-color:whitesmoke;
+    padding: 8px 12 px;
+    border-radius: 6px;
+}
+
+.introducao {
+    background: url(../Imagens/fundo.png);
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    font-size: 30px;
+    text-align: center;
+    /* color: #F5F5F5; */
+}
+
+.informacoes{
+    background-color:#F5F5F5;
+    color: #1B7434;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 50px;
+    text-align: center;
+}
+
+.informacoes h3{
+    font-size: 2rem;
+    margin-bottom: 35px;
+}
+
+.informacoes p{
+    max-width: 800px;
+    margin-bottom: 35px;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.informacoes hr {
+    width: 200px;
+    height: 2px;
+    background-color: black;
+    margin-bottom: 70px;
+    border: none;
+}
+
+.informacoes .item{
+    /* width: 100px; */
+    display:flex;
+}
+
+.informacoes .item li{
+    padding: 0 30px;
+    text-align: center;
+    align-items: ;
+}
+
+.informacoes .item h4{
+    color: #1B7434;
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+.informacoes .item li p{
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+footer {
+    padding: 1.25rem;
+    color: #F5F5F5;
+    background-color: #1B7434;
+    border-bottom: 1px solid darkgrey;
+    display: flex ;
+    align-items:end ;
+    justify-content: space-between;
+} 
+
+@media (max-width: 850px){
+    .informacoes .item{
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 700px){
+    header{
+        flex-direction: column;
+    }
+
+    header img{
+        margin-bottom: 15px;
+    }
+
+    .introducao{
+        margin-top: 50px;
+    }
+
+    .introducao h1{
+        font-size: 2.3rem;
+    }
+
+    .introducao p{
+        font-size: 1.3rem
+    }
+}
